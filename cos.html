@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your cart - F.A.R.</title>
+    <link rel="icon" type="image/x-icon" href="/imagini/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/style/cos.css">
+    <script src="/js/cos.js"></script>
+    <link rel="stylesheet" href="/style/dark.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="/imagini/logo.png" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active hover-underline" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline" href="categorii.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline" href="/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cos.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cart-count" class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Your cart</h1>
+            <p class="lead">Check your products and finalize the order.</p>
+        </div>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="cart-items" id="cartItems">
+                        <!-- Cart items will be loaded here dynamically -->
+                        <div class="empty-cart-message" id="emptyCartMessage">
+                            <i class="fas fa-shopping-cart"></i>
+                            <h3>Your cart is empty</h3>
+                            <p>You haven't added any products to your cart yet.</p>
+                            <a href="/categorii.html" class="btn btn-primary" style="background-color: #b50000; border: none;">Explore our products</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="cart-summary">
+                        <h3>Order summary</h3>
+                        <div class="summary-item">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">0.00€</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Shipping:</span>
+                            <span id="shipping">0.00€</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span>Total:</span>
+                            <span id="total">0.00€</span>
+                        </div>
+                        <a href="/checkout.php" class="btn btn-primary btn-block checkout-btn" style="background-color: #b50000; border: none;"  id="checkoutBtn" disabled>
+                            Send order
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #000000; color: white; padding: 2rem 0; margin-top: 50px;">
+        <div class="container text-center">
+            <p>&copy; 2025 <a href="#" style="text-decoration: none; color: white;">F.A.R.</a> All rights reserved.</p>
+        </div>
+        <div class="container text-center">
+            <img src="/imagini/favicon.png" alt="F.A.R." style="width: 80px;">
+            <img src="/imagini/itec.png" alt="F.A.R." style="width: 100px;">
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/theme.js"></script>
+</body>
+</html> 

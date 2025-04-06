@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <title>FAR | Official Website</title>
+    <link rel="icon" type="image/x-icon" href="/imagini/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/style/index.css">
+    <script src="/js/index.js"></script>
+    <link rel="stylesheet" href="/style/dark.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/imagini/logo.png" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active hover-underline" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline" href="categorii.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline" href="/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cos.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cart-count" class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="/imagini/img-hero1.jpg" alt="Music Shop Hero" class="hero-image">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to F.A.R.</h1>
+            <p>Discover the world of music through our online music store. Find your dream instrument and accessories for your passion.</p>
+            <a href="categorii.html" class="btn hero-btn">Explore our products</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Categorii -->
+        <section class="categories-section">
+            <div class="container">
+                <h2 class="text-center">Popular Categories</h2>
+                <hr class="selectie">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="/categorii.html?cat=chitare" class="category-link">
+                            <div class="card category-card">
+                                <div class="category-image">
+                                    <img src="/imagini/guitar1.png" class="card-img-top" alt="Chitare">
+                                    <div class="category-overlay">
+                                        <span class="category-icon"><i class="fas fa-guitar"></i></span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Guitars</h5>
+                                    <p class="card-text">Discover our range of acoustic and electric guitars.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/categorii.html?cat=tobe" class="category-link">
+                            <div class="card category-card">
+                                <div class="category-image">
+                                    <img src="/imagini/tobe2.jpg" class="card-img-top" alt="Tobe">
+                                    <div class="category-overlay">
+                                        <span class="category-icon"><i class="fas fa-drum"></i></span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Drums</h5>
+                                    <p class="card-text">Complete sets and accessories for drummers.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/categorii.html?cat=piano" class="category-link">
+                            <div class="card category-card">
+                                <div class="category-image">
+                                    <img src="/imagini/pian2.jpg" class="card-img-top" alt="Keyboards">
+                                    <div class="category-overlay">
+                                        <span class="category-icon"><i class="fas fa-ruler-horizontal"></i></span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Pianos</h5>
+                                    <p class="card-text" style="padding-bottom: 22px;">Digital pianos and high-quality synthesizers.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center mt-4" >
+                    <a href="/categorii.html" class="btn btn-outline-primary view-all-btn">
+                        See all categories <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="text-center">FAQ</h2>
+                <hr class="selectie" style="margin-top: -20px;">
+                <div class="faq-container">
+                    <div class="faq-questions">
+                        <div class="faq-item" data-faq="1">
+                            <div class="faq-question">
+                                <span>How can I pay for my order?</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We accept payments with bank cards, bank transfers and cash on delivery. For card payments, we use a secure system that protects your data.</p>
+                                <ul>
+                                    <li>We accept Visa, Mastercard, American Express and bank transfers</li>
+                                    <li>All card payments are processed through a secure system</li>
+                                    <li>Cash on delivery is available for all locations</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-faq="2">
+                            <div class="faq-question">
+                                <span>How long does the delivery take?</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Standard delivery takes between 2-4 business days. For orders placed before 2 PM, delivery can be processed the same day.</p>
+                                <ul>
+                                    <li>Standard delivery: 2-4 business days</li>
+                                    <li>Express delivery: 24 hours (additional fee)</li>
+                                    <li>Same day delivery available for orders before 2 PM</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-faq="3">
+                            <div class="faq-question">
+                                <span>What is our return policy?</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We accept returns within 14 days of receiving the product, if it is not damaged and is in the original packaging.</p>
+                                <ul>
+                                    <li>14-day return period</li>
+                                    <li>Product must be in original condition</li>
+                                    <li>Return shipping costs covered by customer</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-faq="4">
+                            <div class="faq-question">
+                                <span>Do you offer a guarantee for products?</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, all our products come with a minimum 2-year warranty. This covers manufacturing defects and technical issues.</p>
+                                <ul>
+                                    <li>Minimum 2-year warranty on all products</li>
+                                    <li>Covers manufacturing defects</li>
+                                    <li>Free repairs or replacements for warranty claims</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="news-section">
+            <div class="container">
+                <h2 class="text-center">Latest News</h2>
+                <hr class="selectie">
+                <div class="news-container">
+                    <div class="news-slider">
+                        <div class="news-item active">
+                            <div class="news-image">
+                                <img src="/imagini/news/colectii.jpg" alt="New Guitar Models">
+                            </div>
+                            <div class="news-content">
+                                <h3>New Collection JUST DROPPED!</h3>
+                                <p>We've just dropped the latest collection of T-shirts, now in collaboration with iTec!</p>
+                                <span class="news-date">April 6, 2025</span>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-image">
+                                <img src="/imagini/news/RaulNica.JPG" alt="Summer Music Festival">
+                            </div>
+                            <div class="news-content">
+                                <h3>Raul Nica @ Târgul de Paște Timișoara</h3>
+                                <p>Raul Nica will perform at the Easter Fair in Timișoara on April 12th. Don't miss it!</p>
+                                <span class="news-date">April 6, 2025</span>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-image">
+                                <img src="/imagini/news/festival-news.jpg" alt="Special Discount on Drums">
+                            </div>
+                            <div class="news-content">
+                                <h3>Special Discount on EVERYTHING</h3>
+                                <p>Get up to 30% off on selected drum sets and accessories starting off from next month.</p>
+                                <span class="news-date">April 6, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-controls">
+                        <button class="news-control prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="news-control next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="container">
+                <h2 class="text-center mb-4">About us</h2>
+                <hr class="selectie" style="margin-top: -20px;">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <p>Our team, FAR, is made up of three 11th-grade students from Moise Nicoara High School in Arad. 
+                            Fabian Halmajan loves playing chess, Andrei Burza is a referee in 2nd league in Romania, and Raul Nica is a musician who wants to work in IT. 
+                            We're trying to bring a mix of logic, leadership, and creativity to the competition.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2025 <a href="#" style="text-decoration: none; color: white;">F.A.R.</a> All rights reserved.</p>
+        </div>
+        <div class="container text-center">
+            <img src="/imagini/favicon.png" alt="F.A.R." style="width: 80px;">
+            <img src="/imagini/itec.png" alt="F.A.R." style="width: 100px;">
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/theme.js"></script>
+    <script src="/js/index.js"></script>
+
+</body>
+</html>

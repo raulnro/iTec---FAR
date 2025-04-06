@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - FAR</title>
+    <link rel="icon" type="image/x-icon" href="/imagini/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/style/contact.css">
+    <script src="/js/contact.js"></script>
+    <script src="/js/theme.js"></script>
+    <link rel="stylesheet" href="/style/dark.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="/imagini/logo.png" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active hover-underline" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline" href="categorii.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline" href="/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cos.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cart-count" class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="animated-element">Contact Us</h1>
+            <p class="lead animated-element">We are here to help you with any questions you may have!</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="container">
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-lg-6 animated-element">
+                <h2>Send us a message</h2>
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" style=" min-height: 200px;" required></textarea>
+                    </div>
+                    <button type="submit" class="contact-button btn btn-primary submit-btn" style="background-color:red; border-color:red " onclick="sendEmail()">Send message</button>
+                </form>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="col-lg-6 contact-info">
+                <div class="row mt-lg-0 mt-5">
+                    <div class="col-md-6 animated-element contact-info">
+                        <i class="fas fa-map-marker-alt" style="color:red"></i>
+                        <h4>Location</h4>
+                        <p>Bulevardul Vasile Pârvan, nr. 2<br>Timișoara, România</p>
+                    </div>
+                    <div class="col-md-6 animated-element contact-info">
+                        <i class="fas fa-phone" style="color:red"></i>
+                        <h4>Phone</h4>
+                        <a href="tel:+40773972876" style="color: black; text-decoration: none;">+40 773 972 876</a>
+                    </div>
+                    <div class="col-md-6 animated-element contact-info">
+                        <i class="fas fa-envelope" style="color:red"></i>
+                        <h4>E-mail</h4>
+                        <a href="mailto:contact@far.ro" style="color: black; text-decoration: none;">contact@far.ro</a>
+                    </div>
+                    <div class="col-md-6 animated-element contact-info">
+                        <i class="fas fa-clock" style="color:red"></i>
+                        <h4>Program</h4>
+                        <p>Monday - Friday: 10:00 - 18:00<br>Saturday: 10:00 - 14:00<br>Sunday: Closed</p>
+                    </div>
+                </div>
+                
+                <!-- Google Map -->
+                <div class="map-container animated-element">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d827.7504507766214!2d21.227561341003046!3d45.746944855827856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47455d837bc27e07%3A0xca50158d0817bf3d!2sBiblioteca%20Centrala%20a%20Universitatii%20Politehnica%2C%20Bulevardul%20Vasile%20P%C3%A2rvan%202%2C%20Timi%C8%99oara!5e0!3m2!1sro!2sro!4v1743834297438!5m2!1sro!2sro" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2025 FAR. All rights reserved.</p>
+        </div>
+        <div class="container text-center">
+            <img src="/imagini/favicon.png" alt="F.A.R." style="width: 80px;">
+            <img src="/imagini/itec.png" alt="F.A.R." style="width: 100px;">
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "lW8PKMOO8-JrE8Urz",
+        });
+    })();
+    </script>
+
+</body>
+</html> 
